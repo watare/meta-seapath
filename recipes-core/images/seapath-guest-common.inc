@@ -24,3 +24,8 @@ COMPATIBLE_MACHINE = "votp-vm"
 # Remove users that do not exist in
 # guest images
 USERS_LIST_LOCKED_remove = "qemu ceph"
+
+# Add docker
+IMAGE_INSTALL += " \
+    docker-ce \
+    docker-ce-contrib \
